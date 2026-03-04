@@ -23,7 +23,7 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
         'Navigate markets with confidence',
         'Fast execution, reliable returns',
         'Growing your portfolio steadily',
-        'PLENTY FX - Your path to financial freedom',
+        'EDGE CRAFT - Your path to financial freedom',
         'Elevate your trading experience',
     ];
 
@@ -244,7 +244,7 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
             { duration: 900, text: 'Activating Trading Signals', progress: 70 },
             { duration: 700, text: 'Loading Strategies', progress: 85 },
             { duration: 600, text: 'Preparing Dashboard', progress: 95 },
-            { duration: 500, text: 'Welcome to PLENTY FX', progress: 100 },
+            { duration: 500, text: 'Welcome to EDGE CRAFT', progress: 100 },
         ];
 
         let currentPhase = 0;
@@ -322,13 +322,15 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
 
             {/* Main content */}
             <div className='zeus-loader__content'>
-                {/* PLENTY FX Logo */}
+                {/* EDGE CRAFT Logo */}
                 <div className='zeus-loader__logo-container'>
-                    <img 
-                        src='/plentyfxlogo.png' 
-                        alt='PLENTY FX Logo' 
-                        className='zeus-loader__logo'
-                    />
+                    <div className='zeus-loader__logo-circle'>
+                        <img 
+                            src='/edgelogo.jpg' 
+                            alt='EDGE CRAFT Logo' 
+                            className='zeus-loader__logo'
+                        />
+                    </div>
                     <div className='zeus-loader__logo-glow' />
                     <div className='zeus-loader__logo-glow zeus-loader__logo-glow--secondary' />
                 </div>
@@ -424,8 +426,8 @@ const ModernLoader: React.FC<ModernLoaderProps> = ({ onFinish }) => {
 
                 {/* Brand name */}
                 <h1 className='zeus-loader__brand'>
-                    <span className='zeus-loader__brand-zeus'>PLENTY</span>
-                    <span className='zeus-loader__brand-trading'>FX</span>
+                    <span className='zeus-loader__brand-zeus'>EDGE</span>
+                    <span className='zeus-loader__brand-trading'>CRAFT</span>
                 </h1>
 
                 <p className='zeus-loader__tagline'>Professional Trading Platform</p>

@@ -1,4 +1,4 @@
-// PLENTY FX Loader - Premium Trading Theme
+// EDGE CRAFT Loader - Premium Trading Theme
 .zeus-loader {
     position: fixed;
     top: 0;
@@ -32,12 +32,12 @@
         height: 100%;
         background: radial-gradient(
             circle at 50% 50%,
-            rgba(0, 255, 136, 0.15) 0%,
+            rgba(0, 191, 255, 0.2) 0%,
             transparent 50%
         ),
         radial-gradient(
             circle at 30% 70%,
-            rgba(255, 215, 0, 0.1) 0%,
+            rgba(65, 105, 225, 0.15) 0%,
             transparent 40%
         );
         opacity: 0;
@@ -72,7 +72,7 @@
             height: 300px;
             top: 5%;
             left: -15%;
-            background: radial-gradient(ellipse, rgba(0, 255, 136, 0.2) 0%, transparent 70%);
+            background: radial-gradient(ellipse, rgba(0, 191, 255, 0.25) 0%, transparent 70%);
             animation-delay: 0s;
         }
 
@@ -81,7 +81,7 @@
             height: 350px;
             top: 30%;
             right: -20%;
-            background: radial-gradient(ellipse, rgba(255, 215, 0, 0.25) 0%, transparent 70%);
+            background: radial-gradient(ellipse, rgba(65, 105, 225, 0.3) 0%, transparent 70%);
             animation-delay: 8s;
         }
 
@@ -90,7 +90,7 @@
             height: 320px;
             bottom: 10%;
             left: 15%;
-            background: radial-gradient(ellipse, rgba(0, 191, 255, 0.18) 0%, transparent 70%);
+            background: radial-gradient(ellipse, rgba(30, 144, 255, 0.2) 0%, transparent 70%);
             animation-delay: 16s;
         }
     }
@@ -119,13 +119,26 @@
         margin-bottom: 1rem;
     }
 
+    &__logo-circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid rgba(0, 191, 255, 0.6);
+        box-shadow: 
+            0 0 30px rgba(0, 191, 255, 0.8),
+            0 0 60px rgba(65, 105, 225, 0.6),
+            inset 0 0 20px rgba(0, 191, 255, 0.3);
+        animation: circlePulse 2s infinite ease-in-out;
+        position: relative;
+        z-index: 2;
+    }
+
     &__logo {
         width: 100%;
         height: 100%;
-        object-fit: contain;
-        filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.8));
-        animation: logoPulse 2s infinite ease-in-out;
-        border-radius: 12px;
+        object-fit: cover;
+        animation: logoGlow 2s infinite ease-in-out;
     }
 
     &__logo-glow {
@@ -135,10 +148,11 @@
         transform: translate(-50%, -50%);
         width: 250px;
         height: 250px;
-        background: radial-gradient(circle, rgba(255, 215, 0, 0.4) 0%, transparent 70%);
+        background: radial-gradient(circle, rgba(0, 191, 255, 0.4) 0%, transparent 70%);
         border-radius: 50%;
         animation: glowPulse 2s infinite ease-in-out;
         pointer-events: none;
+        z-index: 1;
 
         &--secondary {
             width: 350px;
@@ -226,8 +240,8 @@
     }
 
     &__brand-zeus {
-        color: #FFD700;
-        text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.5);
+        color: #00BFFF;
+        text-shadow: 0 0 20px rgba(0, 191, 255, 0.8), 0 0 40px rgba(0, 191, 255, 0.5);
         animation: textGlow 2s infinite alternate;
     }
 
@@ -244,12 +258,12 @@
     }
 
     &__tagline {
-        color: #FFD700;
+        color: #00BFFF;
         font-size: 1.2rem;
         font-weight: 600;
         text-align: center;
         margin: 0;
-        text-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+        text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
         animation: taglinePulse 3s infinite ease-in-out;
     }
 
@@ -277,10 +291,10 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 0.5rem;
-        color: #FFD700;
+        color: #00BFFF;
         font-size: 0.9rem;
         font-weight: 600;
-        text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        text-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
     }
 
     &__progress-bar {
@@ -295,11 +309,11 @@
 
     &__progress-fill {
         height: 100%;
-        background: linear-gradient(90deg, #FFD700 0%, #FFA500 50%, #FF6B00 100%);
+        background: linear-gradient(90deg, #00BFFF 0%, #4169E1 50%, #1E90FF 100%);
         border-radius: 10px;
         position: relative;
         transition: width 0.3s ease-out;
-        box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        box-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
         animation: progressGlow 1.5s infinite alternate;
     }
 
@@ -324,8 +338,8 @@
         align-items: center;
         gap: 0.8rem;
         padding: 1rem 1.5rem;
-        background: rgba(255, 215, 0, 0.1);
-        border: 1px solid rgba(255, 215, 0, 0.3);
+        background: rgba(0, 191, 255, 0.1);
+        border: 1px solid rgba(0, 191, 255, 0.3);
         border-radius: 12px;
         backdrop-filter: blur(10px);
         max-width: 500px;
@@ -342,7 +356,7 @@
         svg {
             width: 100%;
             height: 100%;
-            filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+            filter: drop-shadow(0 0 8px rgba(0, 191, 255, 0.6));
         }
     }
 
@@ -388,6 +402,34 @@
     50% {
         transform: scale(1.05);
         filter: drop-shadow(0 0 30px rgba(255, 215, 0, 1));
+    }
+}
+
+@keyframes circlePulse {
+    0%,
+    100% {
+        border-color: rgba(0, 191, 255, 0.6);
+        box-shadow: 
+            0 0 30px rgba(0, 191, 255, 0.8),
+            0 0 60px rgba(65, 105, 225, 0.6),
+            inset 0 0 20px rgba(0, 191, 255, 0.3);
+    }
+    50% {
+        border-color: rgba(0, 191, 255, 1);
+        box-shadow: 
+            0 0 40px rgba(0, 191, 255, 1),
+            0 0 80px rgba(65, 105, 225, 0.8),
+            inset 0 0 30px rgba(0, 191, 255, 0.5);
+    }
+}
+
+@keyframes logoGlow {
+    0%,
+    100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.2);
     }
 }
 
@@ -452,10 +494,10 @@
 
 @keyframes textGlow {
     0% {
-        text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 40px rgba(255, 215, 0, 0.5);
+        text-shadow: 0 0 20px rgba(0, 191, 255, 0.8), 0 0 40px rgba(0, 191, 255, 0.5);
     }
     100% {
-        text-shadow: 0 0 30px rgba(255, 215, 0, 1), 0 0 60px rgba(255, 215, 0, 0.8);
+        text-shadow: 0 0 30px rgba(0, 191, 255, 1), 0 0 60px rgba(0, 191, 255, 0.8);
     }
 }
 
@@ -471,10 +513,10 @@
 
 @keyframes progressGlow {
     0% {
-        box-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+        box-shadow: 0 0 15px rgba(0, 191, 255, 0.8);
     }
     100% {
-        box-shadow: 0 0 25px rgba(255, 215, 0, 1), 0 0 35px rgba(255, 165, 0, 0.8);
+        box-shadow: 0 0 25px rgba(0, 191, 255, 1), 0 0 35px rgba(65, 105, 225, 0.8);
     }
 }
 
@@ -509,6 +551,11 @@
 @media (max-width: 768px) {
     .zeus-loader {
         &__logo-container {
+            width: 150px;
+            height: 150px;
+        }
+
+        &__logo-circle {
             width: 150px;
             height: 150px;
         }
