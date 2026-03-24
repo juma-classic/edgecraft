@@ -138,9 +138,25 @@
             overflow-y: auto;
             scrollbar-width: none;
             height: calc(100% - 5rem);
+            width: 4rem;
             box-shadow:
                 0 1.2rem 1.6rem rgb(14 14 14 / 8%),
                 0 0.4rem 0.6rem rgb(14 14 14 / 3%);
+
+            // Hide "Every tick" label text on mobile, keep only the toggle switch
+            .every-tick__label,
+            .toolbar__every-tick-label,
+            [class*='every-tick'] span:not([class*='toggle']),
+            [class*='every_tick'] .label,
+            [class*='every_tick'] span:first-child {
+                display: none;
+            }
+
+            // Ensure the wrapper stays narrow — hide any text nodes in toggle rows
+            .toolbar__group-btn > div > span:not(.toolbar__icon),
+            .toolbar__group-btn > div > label > span:first-child {
+                display: none;
+            }
         }
     }
 }
