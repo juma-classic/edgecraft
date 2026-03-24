@@ -60,7 +60,7 @@ const DTraderIframe: React.FC<DTraderIframeProps> = ({ className = '' }) => {
                 token1: authToken,
                 cur1: currency,
                 lang: 'EN',
-                app_id: '119552', // Your EDGE CRAFT app ID
+                app_id: '121823', // Your EDGE CRAFT app ID
             });
 
             const url = `https://deriv-dtrader.vercel.app/dtrader?${params.toString()}`;
